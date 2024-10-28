@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Prociono&display=swap');
+
+
+/*Reseteamos los margenes que vienen predefinidos*/
+*{
+    font-family: "Playwrite GB S", cursive;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Prociono", serif;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center; /*esta prop es para centrar el contenido de las etiquetas*/
+    padding-top: 20%;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+h2
+/*Acá estamos utilizando un tamaño de fuente específico para esta clase*/
+.fuente50px
+{
+    font-size: 55px;
+}
+
+/*Acá estamos editando los colores del contenido de cada sección*/
+
+.colorPrincipal
+{
+    background-color: #591c0f;
+    color: white;
+      /*De esta forma las anclas dentro del footer se ponen blancas y le quitamos el subrayado*/
+      a{
+        color: white;
+        text-decoration:none;
+    }
+}
+
+.colorSecundario
+{
+    background-color: #114753;
+    color: white;
+      /*De esta forma las anclas dentro del footer se ponen blancas y le quitamos el subrayado*/
+      a{
+        color: white;
+        text-decoration:none;
+    }
+}
+header,footer
+{
+    .logo
+    {
+        width: 100px;
+    }
+     /*De esta forma las listas dentro del footer no tienen circulitos*/
+    ul{
+        list-style:none;
+    }
+    p
+    {
+        font-size: 10px;
+    }
+    /*Acá cambiamos los colores y tamaños de los íconos*/
+    .fa-whatsapp
+    {
+        color: #25d366;
+        font-size: 64px;
+        position: fixed; /*De esta forma hacemos que el icono nos acompañe, es necesario indicar EL LUGAR*/
+        bottom: 20px;
+        right:20px;
+    }
+    .fa-instagram
+    {
+        color: violet;
+        font-size: 64px;
+    }
+}
+/*De esta forma hacemos qe los elementos de la lista item del header queden junto al otro, no abajo Y que quede como botón*/
+header{
+    position: sticky; /*De esta forma el header nos acompaña*/
+    top: 0;
+    z-index:1000; /*De esta forma le damos prioridad frente a otros elementos y no se sobrepisa al mover*/
+    nav{
+        ul{
+            li{
+                display:inline-block;
+                margin-right: 15px;
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+/* De esta forma aplicamos un tipo de selector clasificador, solo a unos textos específicos*/
+
+.fuenteNegrita
+{
+    font-weight: 700;
+}
+
+
+/* De esta forma cambiamos el tamaño de la fuente*/
+
+.tamanioTreinta{
+    font-size: 30px;
+}
+
+/* De esta forma agregamos la imagen ppal en el index*/
+.sectionIndexPrincipal
+{
+    background-image: url("../assets/img/imgindexppal.jpg") ;
+    height: 80vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    a{
+        color: white; 
+        text-decoration: none;
+    }
+    .contenedorTextoPrincipalIndex{
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+        width: 50%;
+        p{
+            font-size: 1.5rem;
+        }
+        a{
+            display: inline-block;
+            margin-top: 5px;
+        }
+    }
+}
+
+.cursosDestacados{
+    img{
+        width: 350px;
+    }
+}
+
+

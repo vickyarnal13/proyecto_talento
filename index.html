@@ -1,0 +1,118 @@
+<!DOCTYPE html> <!-- etiqueta ppal que indica al navegador que es html 5   -->
+<html lang="es"> <!-- lang es la configuración del lenguaje -->
+
+    <!-- etiqueta de configuraciones del navegador -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Carito - Cursos de Café </title>
+        <!-- favicon icono-->
+         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+          <!-- aca pegamos el kit de iconos-->
+         <script src="https://kit.fontawesome.com/bd2114f8ce.js" crossorigin="anonymous"></script>
+         <!-- aca linkeamos el index al css-->
+         <link rel="stylesheet" href="./css/estilos.css"> 
+    </head>
+    <!--acá va todo lo que ve el user -->
+    <body>
+        <header id="header" class="colorPrincipal">
+            <!-- esto lo hacemos para que el logo nos lleve al inicio -->
+            <a href="#"> <img class="logo"src="./assets/img/logoCaro.jpeg" alt="Logo de carito con granos de cafe" width="300px"></a>  
+            <nav class="navHeader">
+                <ul class="ulHeader">
+                    <li class="listaItem"><a class="linkHeader" href="">Inicio</a></li>
+                    <li class="listaItem"><a class="linkHeader" href="./pages/galeria.html">Galeria</a></li>
+                    <li class="listaItem"><a class="linkHeader" href="./pages/contacto.html">Contacto</a></li>
+                    <li class="listaItem"><a class="linkHeader" href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="listaItem"><a class="linkHeader" href="./pages/productos.html">Productos</a></li>
+                    <li class="listaItem"><a class="linkHeader" href="#encontranos">Nosotros</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- de esta forma agregamos una imagen de fondo-->
+             <section class="sectionIndexPrincipal">
+            <h1>  <!-- de esta forma hacemos un salto de linea para dividir el titulo-->
+                <div>Maestría en Café:</div>
+                 <span class="fuente50px">APRENDE CON CARITO</span>
+            </h1>
+            <div class="contenedorTextoPrincipalIndex">
+            <p>Cursos, asesorías, recetas y más</p>
+            <p>Dejá tu solicitud!</p>
+            <a href="./pages/contacto.html">Contáctanos</a>
+            </div>   
+        </section>
+           <section>
+            <h2>Sobre Carito</h2>
+            <div>
+                <img src="./assets/img/Caro.1.jpeg" alt="foto de caro">
+            </div>
+             <p>Soy Carito, barista profesional y apasionada por el maravilloso mundo del café. Mi amor por el café va más allá
+             de solo prepararlo: me apasiona entender cada paso, desde el origen del grano hasta la taza final
+            </p>
+             <p>
+             Con varios años de experiencia y una formación dedicada, me especializo en café de especialidad y técnicas de barismo, y he trabajado
+             para perfeccionar cada detalle de este arte
+             </p> 
+           </section>
+        <section class="cursosDestacados">
+           <h2>NUESTROS CURSOS</h2>
+           <div>
+            <h3>Barista Inicial</h3>
+            <img src="./assets/img/BaristaInicial.jpeg" alt="Img Barista Inicial" loading="lazy">
+            <a href="./pages/productos.html">VER</a>
+           </div>
+           <div>
+            <h3>Barista Avanzado</h3>
+            <img src="./assets/img/Barista Avanzado.jpeg" alt="Img Barista Avanzado" loading="lazy">
+            <a href="./pages/productos.html">VER</a>
+           </div>
+           <div>
+            <h3>Filtrados</h3>
+            <img src="./assets/img/Filtrados.jpeg" alt="Img Filtrados" loading="lazy">
+            <a href="./pages/productos.html">VER</a>
+           </div>
+        </section>
+        <section id="encontranos">
+            <h2>DEJANOS TUS DUDAS</h2>
+            <P>Completá el formulario para que nos pongamos en contacto con vos</P>
+            <a href="./pages/contacto.html">Hacé click acá</a>
+
+        </section>
+        </main>
+        <footer id="footer" class="colorSecundario">
+            <a href="index.html">
+                <img class="logo" src="./assets/img/logoCaro.jpeg" alt="Logo">
+            </a>
+            <nav>
+                <h3>CONTENIDOS</h3>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="./pages/galeria.html">Galeria</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li><a href="./pages/carrito.html">Carrito</a></li>
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h3>ENCUENTRANOS</h3>
+                <p><span class="fuenteNegrita">Dirección:</span> Virrey del Pino 1581, C1426 C1426EFC, Cdad. Autónoma de Buenos Aires</p>
+                <p><span class="fuenteNegrita">Telefono</span> 112255898</p>
+                <p><span class="fuenteNegrita">Correo electrónico</span> carito@yopmail.com</p>
+                <p>Todos los derechos reservados</p>
+            </div>
+            <div>
+                <h3>CONECTATE CON NOSOTROS</h3>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/caritocursosdecafe/" target="_blanck">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+        </footer>
+        
+    </body>
+</html>
