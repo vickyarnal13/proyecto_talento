@@ -57,19 +57,11 @@ h3{
 /*NAVEGACION EN EL HEADER*/
 .header
 {
-    background-color: rgb(173, 123, 22);
-    width: 100%;
-    padding: 10px;
-    display:flex;
     justify-content: space-between;
     align-items: center;
     position: sticky; /*De esta forma el header nos acompaña*/
     top: 0;
     z-index:1000; /*De esta forma le damos prioridad frente a otros elementos y no se sobrepisa al mover*/
-    img{
-        width: 200px;
-        border-radius: 50%;
-    }
     nav{
         width:50%;
         ul{
@@ -81,7 +73,7 @@ h3{
             a{
                 text-decoration: none;
                 color: black;
-                font-size: 1.5rem;
+                font-size:45px;
             }
 
             }
@@ -91,8 +83,11 @@ h3{
     };
 
 
-footer{
+.footer{
     display: flex;
+    width: 100%;
+    background-color: #333;
+    height: 40vh;
 }
    
 /*FOOTER CON FLEX*/
@@ -102,10 +97,10 @@ footer{
     margin: 0 auto;
     width: 90%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: row;
-    text-align: center;
-    height: 50vh;
+    text-align: justify;
+    font-size: 30px;
     color: black;
     a{
        color: black;
@@ -116,10 +111,13 @@ footer{
 
 header,footer
 {
-    padding: 30px;
-    .logo
-    {
+    display:flex;
+    padding: 10px;
+    background-color: rgb(168, 95, 224);
+    display:flex;
+    img{
         width: 200px;
+        border-radius: 50%;
     }
      /*De esta forma las listas dentro del footer no tienen circulitos*/
     ul{
@@ -162,8 +160,8 @@ header,footer
 /* De esta forma agregamos la imagen ppal en el index*/
 .sectionIndexPrincipal
 {
-    background-image: url("../assets/img/imgindexppal.jpg") ;
-    height: 80vh;
+    background-image: url("../assets/img/galeria_4.jpeg") ;
+    height: 70vh;
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -190,9 +188,9 @@ header,footer
 /*De esta forma hacemos el menú de mis cursos*/
 .cursosDestacados {
     margin: 0 auto;
-    width: 90%;
+    width:100%;
     display: flex;
-    background-color: beige;
+    background-color: rgb(229, 164, 203);
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
