@@ -12,11 +12,6 @@
     
     }
 
-
-h1,h2,h3,h4,h5,h6{
-    font-family: "Prociono", serif;
-}
-
 h1{
     font-size: 3rem;
     text-align: center; /*esta prop es para centrar el contenido de las etiquetas*/
@@ -32,12 +27,15 @@ h2
 {
     font-size: 55px;
 }
+h3{
+    font-size: 30px;
+}
 
 /*Acá estamos editando los colores del contenido de cada sección*/
 
 .colorPrincipal
 {
-    background-color: #591c0f;
+    background-color: rgba(209, 123, 24, 0.801);
     color: white;
       /*De esta forma las anclas dentro del footer se ponen blancas y le quitamos el subrayado*/
       a{
@@ -56,11 +54,72 @@ h2
         text-decoration:none;
     }
 }
+/*NAVEGACION EN EL HEADER*/
+.header
+{
+    background-color: rgb(173, 123, 22);
+    width: 100%;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /*De esta forma el header nos acompaña*/
+    top: 0;
+    z-index:1000; /*De esta forma le damos prioridad frente a otros elementos y no se sobrepisa al mover*/
+    img{
+        width: 200px;
+        border-radius: 50%;
+    }
+    nav{
+        width:50%;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            li{
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 1.5rem;
+            }
+
+            }
+           
+    }
+}
+    };
+
+
+footer{
+    display: flex;
+}
+   
+/*FOOTER CON FLEX*/
+.itemsFooter
+{
+    display:flex;
+    margin: 0 auto;
+    width: 90%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+    height: 50vh;
+    color: black;
+    a{
+       color: black;
+    }
+
+    gap: 50px; 
+}
+
 header,footer
 {
+    padding: 30px;
     .logo
     {
-        width: 100px;
+        width: 200px;
     }
      /*De esta forma las listas dentro del footer no tienen circulitos*/
     ul{
@@ -68,7 +127,7 @@ header,footer
     }
     p
     {
-        font-size: 10px;
+        font-size: 15px;
     }
     /*Acá cambiamos los colores y tamaños de los íconos*/
     .fa-whatsapp
@@ -83,22 +142,6 @@ header,footer
     {
         color: violet;
         font-size: 64px;
-    }
-}
-/*De esta forma hacemos qe los elementos de la lista item del header queden junto al otro, no abajo Y que quede como botón*/
-header{
-    position: sticky; /*De esta forma el header nos acompaña*/
-    top: 0;
-    z-index:1000; /*De esta forma le damos prioridad frente a otros elementos y no se sobrepisa al mover*/
-    nav{
-        ul{
-            li{
-                display:inline-block;
-                margin-right: 15px;
-                border: 2px solid black;
-                border-radius: 5px;
-            }
-        }
     }
 }
 
@@ -133,21 +176,74 @@ header{
         margin: 0 auto;
         padding: 10px;
         text-align: center;
-        width: 50%;
+        width: 40%;
         p{
             font-size: 1.5rem;
         }
         a{
             display: inline-block;
-            margin-top: 5px;
+            margin-top: 20px;
         }
     }
 }
 
-.cursosDestacados{
-    img{
-        width: 350px;
-    }
+/*De esta forma hacemos el menú de mis cursos*/
+.cursosDestacados {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    background-color: beige;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+    height: 50vh;
+
+    gap: 50px; /* Agrega un espacio entre cada elemento */
 }
 
+.tituloCursos
+{
+    padding: 100px;
+}
+
+.cursosDestacados .flex-item img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.sobreMi{
+    img{
+        width: 600px;
+        border-radius: 60%;
+    };
+}
+
+
+
+/*GALERIA*/
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* Para que los elementos se envuelvan en filas */
+    gap: 30px; /* Espacio entre los elementos */
+    justify-content: space-evenly; /* Distribuye los elementos de manera uniforme */
+    background-color: antiquewhite;
+}
+
+.galeria .item {
+    text-align: center;
+    width: 550px; /* Ajusta el ancho de cada item */
+    height: 550px; /* Ajusta la altura de cada item */
+    border: 1px solid gray;
+    color: black;
+}
+
+.galeria .item img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 

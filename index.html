@@ -15,17 +15,19 @@
     </head>
     <!--acá va todo lo que ve el user -->
     <body>
-        <header id="header" class="colorPrincipal">
+        <header class="header">
             <!-- esto lo hacemos para que el logo nos lleve al inicio -->
-            <a href="#"> <img class="logo"src="./assets/img/logoCaro.jpeg" alt="Logo de carito con granos de cafe" width="300px"></a>  
+            <a href="#"> <img class="logo"src="./assets/img/LOGOS.png" alt="Logo de carito con granos de cafe"></a>  
             <nav class="navHeader">
                 <ul class="ulHeader">
                     <li class="listaItem"><a class="linkHeader" href="">Inicio</a></li>
                     <li class="listaItem"><a class="linkHeader" href="./pages/galeria.html">Galeria</a></li>
                     <li class="listaItem"><a class="linkHeader" href="./pages/contacto.html">Contacto</a></li>
-                    <li class="listaItem"><a class="linkHeader" href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <li class="listaItem"><a class="linkHeader" href="./pages/productos.html">Productos</a></li>
                     <li class="listaItem"><a class="linkHeader" href="#encontranos">Nosotros</a></li>
+                    <li class="listaItem"><a class="linkHeader" href="./pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    
+                    
                 </ul>
             </nav>
         </header>
@@ -42,8 +44,8 @@
             <a href="./pages/contacto.html">Contáctanos</a>
             </div>   
         </section>
-           <section>
-            <h2>Sobre Carito</h2>
+           <section class="sobreMi">
+            <h2>SOBRE MI</h2>
             <div>
                 <img src="./assets/img/Caro.1.jpeg" alt="foto de caro">
             </div>
@@ -55,19 +57,19 @@
              para perfeccionar cada detalle de este arte
              </p> 
            </section>
+           <h2 class="tituloCursos">NUESTROS CURSOS</h2>
         <section class="cursosDestacados">
-           <h2>NUESTROS CURSOS</h2>
-           <div>
+           <div class="flex-item">
             <h3>Barista Inicial</h3>
             <img src="./assets/img/BaristaInicial.jpeg" alt="Img Barista Inicial" loading="lazy">
             <a href="./pages/productos.html">VER</a>
            </div>
-           <div>
+           <div class="flex-item">
             <h3>Barista Avanzado</h3>
             <img src="./assets/img/Barista Avanzado.jpeg" alt="Img Barista Avanzado" loading="lazy">
             <a href="./pages/productos.html">VER</a>
            </div>
-           <div>
+           <div class="flex-item">
             <h3>Filtrados</h3>
             <img src="./assets/img/Filtrados.jpeg" alt="Img Filtrados" loading="lazy">
             <a href="./pages/productos.html">VER</a>
@@ -81,10 +83,35 @@
         </section>
         </main>
         <footer id="footer" class="colorSecundario">
-            <a href="index.html">
-                <img class="logo" src="./assets/img/logoCaro.jpeg" alt="Logo">
-            </a>
-            <nav>
+        <a href="#"> <img class="logo"src="./assets/img/LOGOS.png" alt="Logo de carito con granos de cafe"></a> 
+        <section class="itemsFooter">
+            <div class="flex-item">
+                <h3>CONTENIDOS</h3>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="./pages/galeria.html">Galeria</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li><a href="./pages/carrito.html">Carrito</a></li>
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                </ul>
+            </div>
+            <div class="flex-item">
+            <h3>ENCUÉNTRANOS</h3>
+            <p><span class="fuenteNegrita">Dirección:</span> Virrey del Pino 1581, C1426 C1426EFC, Cdad. Autónoma de Buenos Aires</p>
+            <p><span class="fuenteNegrita">Teléfono:</span> 112255898</p>
+            <p><span class="fuenteNegrita">Correo electrónico:</span> carito@yopmail.com</p>
+        </div>
+
+        </section> 
+    </footer>
+</body> -->   
+            <!--<div class="footer-item">
+                <a href="index.html">
+                    <img class="logo" src="./assets/img/LOGOS.png" alt="Logo">
+                </a>
+            </div>
+        
+            <div class="footer-item">
                 <h3>CONTENIDOS</h3>
                 <ul>
                     <li><a href="">Inicio</a></li>
@@ -94,25 +121,24 @@
                     <li><a href="./pages/productos.html">Productos</a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
                 </ul>
-            </nav>
-            <div>
-                <h3>ENCUENTRANOS</h3>
-                <p><span class="fuenteNegrita">Dirección:</span> Virrey del Pino 1581, C1426 C1426EFC, Cdad. Autónoma de Buenos Aires</p>
-                <p><span class="fuenteNegrita">Telefono</span> 112255898</p>
-                <p><span class="fuenteNegrita">Correo electrónico</span> carito@yopmail.com</p>
-                <p>Todos los derechos reservados</p>
             </div>
-            <div>
+        
+            <div class="footer-item">
+                <h3>ENCUÉNTRANOS</h3>
+                <p><span class="fuenteNegrita">Dirección:</span> Virrey del Pino 1581, C1426 C1426EFC, Cdad. Autónoma de Buenos Aires</p>
+                <p><span class="fuenteNegrita">Teléfono:</span> 112255898</p>
+                <p><span class="fuenteNegrita">Correo electrónico:</span> carito@yopmail.com</p>
+            </div>
+        
+            <div class="footer-item">
                 <h3>CONECTATE CON NOSOTROS</h3>
                 <a href="https://web.whatsapp.com/" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
-                <a href="https://www.instagram.com/caritocursosdecafe/" target="_blanck">
+                <a href="https://www.instagram.com/caritocursosdecafe/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
-
         </footer>
-        
-    </body>
+    </body> -->
 </html>
